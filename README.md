@@ -26,4 +26,10 @@ Ya que el uso de "requirements.txt" puede llegar a ser problemático, pipenv uti
 # Vigésimo paso: en cmd, escribo "py manage.py migrate" y me realiza las migraciones. Abro otra vez el servidor para comprobar que todo va bien.
 # Vigesimoprimer paso: he cerrado todo y he abierto la consola Git Bash para enviar lo local a remoto. Este repositorio en GitHub se llamará "Django_practica".
 # Vigesimosegún paso: en Git Bash, me coloco en el directorio "c:/users/soyed/OneDrive/Escritorio/Django" y con el comando "ls", que sirve para indicar todos los directorios que hay en un sistema, compruebo que efectivamente los ficheros correspondientes a la instalación de Django están incluidos.
-# Vigesimotercer paso: 
+# Vigesimotercer paso: en Git Bash, con el comando "git config --global user.name "edor o Edorta23", he cambiado mi nombre de usuario asociado a los commits que hago en este repositorio. He hecho un "git remote add origin https://github.com/Edorta23/Django_practica" y me he conectado de al repositorio remoto.
+# Vigesimocuarto paso: en el primer push, con el comando "git push -u origin master" me ha dado problemas y no sé si estaban relacionados con los cambios que he hecho en el nombre de usuario con el comando "git config --global user.name edor o Edorta23". Luego parece que esto se ha resuelto cuando he vuelto a cambiar el nombre de usuario a "soyedorta3@hotmail.com".
+# Vigesimoquinto paso: he cambiado el nombre de la rama de master a main con "git checkout main".
+# Vigesimosexto paso: me aparecen dos ramas, una llamada main (en la que estoy) y la otra master, y no me dejan hacer merge. Aparece este error con "git merge": "fatal: refusing to merge unrelated histories".
+# Vigesimoséptimo paso: resuelvo lo anterior con "git merge --allow-unrelated-histories master" desde la rama main.
+# Vigesimoctavo paso: tras esto, borro la rama master "git branch -d master".
+# Vigesimonoveno paso: 

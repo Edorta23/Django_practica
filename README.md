@@ -24,4 +24,6 @@ Ya que el uso de "requirements.txt" puede llegar a ser problemático, pipenv uti
 # Decimoctavo paso: en cmd, escribo "py manage.py runserver". Esto abre un servidor local de desarrollo en "http://127.0.0.1:8000". Antes de ir a esta url, debo realizar unas migraciones, que es como Django almacena los cambios en sus modelos.
 # Decimonoveno paso: con "ctrl + c" (CTRL-BREAK), cierro el servidor.
 # Vigésimo paso: en cmd, escribo "py manage.py migrate" y me realiza las migraciones. Abro otra vez el servidor para comprobar que todo va bien.
-# Vigesimoprimer paso: 
+# Vigesimoprimer paso: he cerrado todo y he abierto la consola Git Bash para enviar lo local a remoto. Este repositorio en GitHub se llamará "Django_practica".
+# Vigesimosegún paso: en Git Bash, me coloco en el directorio "c:/users/soyed/OneDrive/Escritorio/Django" y con el comando "ls", que sirve para indicar todos los directorios que hay en un sistema, compruebo que efectivamente los ficheros correspondientes a la instalación de Django están incluidos.
+# Vigesimotercer paso: 

@@ -32,4 +32,20 @@ Ya que el uso de "requirements.txt" puede llegar a ser problemático, pipenv uti
 # Vigesimosexto paso: me aparecen dos ramas, una llamada main (en la que estoy) y la otra master, y no me dejan hacer merge. Aparece este error con "git merge": "fatal: refusing to merge unrelated histories".
 # Vigesimoséptimo paso: resuelvo lo anterior con "git merge --allow-unrelated-histories master" desde la rama main.
 # Vigesimoctavo paso: tras esto, borro la rama master "git branch -d master".
-# Vigesimonoveno paso: 
+# Vigesimonoveno paso: abro cmd y, colocándome en el directorio del proyecto, escribo "pipenv shell" para activar el entorno virtual "Django-n9IHszNr".
+# Trigésimo paso: una vez activado el entorno virtual, escribo "code ." para abrirlo en VSCode.
+# Trigesimoprimer paso: No sé si hace falta, pero vuelvo a elegir el intérprete de Python en la Paleta de comandos.
+# Trigesimosegundo paso: creo la primera aplicación llamada "catalog", con el comando "py manage.py startapp catalog". Esta vez lo he escrito en "la terminal de VSCode, colocándome en el directorio raíz.
+# Trigesimotercer paso: en el directorio de "miproyecto", abro el fichero "settings.py" y escribo "catalog.apps.CatalogConfig" (así, entre comillas) en la sección de "INSTALLED_APPS". Esto se realiza para conectar la aplicación "catalog" con el proyecto general.
+# Trigesimocuarto paso: para conectar la ruta (Django llama a las rutas "vistas") entre la app "catalog" y el proyecto general, en el fichero "urls.py" de "miproyecto", al crear el proyecto se ha creado automáticamente la lista "urlpatterns = [path("admin/", admin.site.urls),]", en la que se configuran los patrones de las vistas o rutas.
+# Trigesimoquinto paso: para que todo lo que sea la ruta "/catalog/" se conecte a través de nuestra app "catalog", en la lista "urlpatterns" escribo "path("catalog/", include('catalog.urls'))".
+# Trigesimosexto paso: creo un fichero "urls.py" en el directorio de la app "catalog". En el escribo "from django.contrib import admin
+from django.urls import path, include, re_path
+
+
+from django.urls import re_path as url
+from . import views
+
+
+urlpatterns = []". Con esto asocio la vista con la app "catalog".
+# Trigesimoséptimo paso: creo un super-usuario con "py manage.py createsuperuser" en el directorio del proyecto.
